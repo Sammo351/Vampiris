@@ -663,3 +663,4 @@ Received Import Request.
 Start importing Assets/Models/Props/Weapons/Stake.fbx using Guid(d763078c1544d204eb04d765c367cc8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a5f4f584738f930d49a4bca728286fa') in 0.046957 seconds
   Import took 0.052955 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
