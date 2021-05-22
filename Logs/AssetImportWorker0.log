@@ -15,11 +15,11 @@ E:/Documents/GitHub/Vampiris
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-9998
+1290
 Successfully changed project path to: E:/Documents/GitHub/Vampiris
 E:/Documents/GitHub/Vampiris
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 162.74 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 128.11 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.1f1 (270dd8c3da1c)
 [Subsystems] Discovering subsystems at path E:/Unity/2020.2.1f1/Editor/Data/Resources/UnitySubsystems
@@ -35,27 +35,959 @@ Initialize mono
 Mono path[0] = 'E:/Unity/2020.2.1f1/Editor/Data/Managed'
 Mono path[1] = 'E:/Unity/2020.2.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'E:/Unity/2020.2.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56760
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56956
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: E:/Unity/2020.2.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001470 seconds.
+Registered in 0.002153 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 157.67 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 110.79 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.138 seconds
+- Completed reload, in  1.838 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.013010 seconds.
+Registered in 0.012738 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 107.02 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 128.12 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
-[ScriptCompilation] NOT recompiling all scripts because this is an import worker process. Reason to compile was: Define symbols changed
+Mono: successfully reloaded assembly
+- Completed reload, in  2.664 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
+Refreshing native plugins compatible for Editor in 1.05 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3515 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 170.2 MB.
+System memory in use after: 166.6 MB.
+
+Unloading 59 unused Assets to reduce memory usage. Loaded Objects now: 4004.
+Total: 31.933100 ms (FindLiveObjects: 0.523700 ms CreateObjectMapping: 0.239000 ms MarkObjects: 27.040200 ms  DeleteObjects: 4.128000 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Buildings/Prefabs/Building_Exteriors
+  artifactKey: Guid(d88947d27ebd04a47abd247d21dd700a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Buildings/Prefabs/Building_Exteriors using Guid(d88947d27ebd04a47abd247d21dd700a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19d61bd043a4af60cbbee8820d65990f') in 0.008266 seconds
+  Import took 0.016273 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000285 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Buildings
+  artifactKey: Guid(17d88d63e4c62b84bb727a08d643aa76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Buildings using Guid(17d88d63e4c62b84bb727a08d643aa76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e059dab64f0b197b1088b89fad5e419') in 0.002741 seconds
+  Import took 0.010278 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD
+  artifactKey: Guid(147531229100251438e7c5429a09f763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD using Guid(147531229100251438e7c5429a09f763) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb960ae7c16489b252fd43acccb42dc3') in 0.002473 seconds
+  Import took 0.010308 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000401 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES
+  artifactKey: Guid(bcef0bfb8cbe6364aac1e13e34a72012) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES using Guid(bcef0bfb8cbe6364aac1e13e34a72012) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '538a4f3a00ca512077242ec36e1b74ce') in 0.002728 seconds
+  Import took 0.009443 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000327 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Buildings/Prefabs
+  artifactKey: Guid(c588c17b9406fed429df331963b4bb6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Buildings/Prefabs using Guid(c588c17b9406fed429df331963b4bb6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8500f0529d9cf9c58937af49e87da43') in 0.003059 seconds
+  Import took 0.010723 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 375.380361 seconds.
+  path: Assets/KinematicSoup/KSCommon.dll
+  artifactKey: Guid(e3634b15993cd874d800393fea970b1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KinematicSoup/KSCommon.dll using Guid(e3634b15993cd874d800393fea970b1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '610e15f477ebba5b9add61dbe7881233') in 0.057114 seconds
+  Import took 0.065189 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.032810 seconds.
+  path: Assets/KinematicSoup/KSCommon.dll
+  artifactKey: Guid(e3634b15993cd874d800393fea970b1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KinematicSoup/KSCommon.dll using Guid(e3634b15993cd874d800393fea970b1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '610e15f477ebba5b9add61dbe7881233') in 0.002901 seconds
+  Import took 0.010053 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008989 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.835 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.71 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3250 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 159.8 MB.
+System memory in use after: 156.3 MB.
+
+Unloading 59 unused Assets to reduce memory usage. Loaded Objects now: 3997.
+Total: 29.327200 ms (FindLiveObjects: 0.828200 ms CreateObjectMapping: 0.461900 ms MarkObjects: 24.902400 ms  DeleteObjects: 3.132300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1260.048349 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/Resources/Effects/Fire_Anim.mat
+  artifactKey: Guid(5a26c2f06b868924890d87092b37d91e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/Resources/Effects/Fire_Anim.mat using Guid(5a26c2f06b868924890d87092b37d91e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '076a5ebb380d908eceb2c59bb7ffd24a') in 1.258020 seconds
+  Import took 1.268303 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.800818 seconds.
+  path: Assets/Art/Textures/DensityVolumeTextures/3d_fractal_noise_sample01.tga
+  artifactKey: Guid(836429d92e1b49443b7743362fdeb1fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/DensityVolumeTextures/3d_fractal_noise_sample01.tga using Guid(836429d92e1b49443b7743362fdeb1fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be461f99d7cbe725857679da5af259cd') in 0.098922 seconds
+  Import took 0.107251 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000462 seconds.
+  path: Assets/Art/Textures/General/Bamboo_A_BNM.png
+  artifactKey: Guid(f6341afdbd8d916429f1fb266c729b58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/Bamboo_A_BNM.png using Guid(f6341afdbd8d916429f1fb266c729b58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57dfe0697be6bcfb84944e611c62c3f2') in 0.147976 seconds
+  Import took 0.154953 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000369 seconds.
+  path: Assets/Art/Textures/General/Bamboo_A_MaskMap.png
+  artifactKey: Guid(0081f8fb9bc44a0448c0276d234cd68d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/Bamboo_A_MaskMap.png using Guid(0081f8fb9bc44a0448c0276d234cd68d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f2caa387b8629371ebc6d0bf5732a69') in 0.066311 seconds
+  Import took 0.073258 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000376 seconds.
+  path: Assets/Art/Textures/General/ConcreteTaupe_02_Albedo.png
+  artifactKey: Guid(5b5f09d31f567674ea32972d86836528) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/ConcreteTaupe_02_Albedo.png using Guid(5b5f09d31f567674ea32972d86836528) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '588ed9cbf049c7c5bc76b0db390e185a') in 0.041247 seconds
+  Import took 0.049438 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000475 seconds.
+  path: Assets/Art/Textures/General/Brass_Albedo.png
+  artifactKey: Guid(3287de45d937b34418b4eb16c1a27c8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/Brass_Albedo.png using Guid(3287de45d937b34418b4eb16c1a27c8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64af24183dd482b08c33c1bfb265ec4b') in 0.057363 seconds
+  Import took 0.064668 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000323 seconds.
+  path: Assets/Art/Textures/General/ConcreteHoles_MAODS.png
+  artifactKey: Guid(3c37174c3fa9e7646b00e37ea0871adc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/ConcreteHoles_MAODS.png using Guid(3c37174c3fa9e7646b00e37ea0871adc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1499b087d048f382c63e9252db4938a') in 0.027811 seconds
+  Import took 0.036991 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/Art/Textures/VFX/BamBoo_Leaves_Albedo.png
+  artifactKey: Guid(8a51867cd75a2a7438c127fd7ae830e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/VFX/BamBoo_Leaves_Albedo.png using Guid(8a51867cd75a2a7438c127fd7ae830e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5ad2e46c647194b339669236953c7c7') in 0.040944 seconds
+  Import took 0.048302 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000327 seconds.
+  path: Assets/Art/Textures/General/ConcretePolished_Albedo.png
+  artifactKey: Guid(1f625b5dff84a4b4fa20cebcb4146d3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/ConcretePolished_Albedo.png using Guid(1f625b5dff84a4b4fa20cebcb4146d3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47aafd360af5ae0506b28de667d4cbc9') in 0.048078 seconds
+  Import took 0.055806 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000331 seconds.
+  path: Assets/Art/Textures/General/DecalSheet_01A_BC.png
+  artifactKey: Guid(989cdd44d30f8c940ab150bdccfd5beb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/DecalSheet_01A_BC.png using Guid(989cdd44d30f8c940ab150bdccfd5beb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '997c2cf9d03c297137d05407f911a496') in 0.081731 seconds
+  Import took 0.088594 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000374 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Terrain/Mats/AstroGrass_Fresh_AO.tif
+  artifactKey: Guid(72df9bb0e788fe24785a09811ae32f79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Terrain/Mats/AstroGrass_Fresh_AO.tif using Guid(72df9bb0e788fe24785a09811ae32f79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50d4b5f385e00d51cdec7e1ed54d9fd5') in 0.017398 seconds
+  Import took 0.024874 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000362 seconds.
+  path: Assets/Art/Textures/General/ConcreteRough_DetailMap.png
+  artifactKey: Guid(ca33ff158a9699d4dacba15d141de285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/ConcreteRough_DetailMap.png using Guid(ca33ff158a9699d4dacba15d141de285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e2f3da153c01d86d701602627e3ea9c') in 0.068927 seconds
+  Import took 0.075585 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/Art/Textures/VFX/BamBoo_Leaves_Normal.png
+  artifactKey: Guid(5f32f45b35afc554ca8d0bbae0fb2f0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/VFX/BamBoo_Leaves_Normal.png using Guid(5f32f45b35afc554ca8d0bbae0fb2f0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aca4fe9f10bead1f1a6e20e22f9d35bc') in 0.009135 seconds
+  Import took 0.016660 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000904 seconds.
+  path: Assets/Art/Textures/General/ConcreteSmooth_MAODS.png
+  artifactKey: Guid(0a02ce20803245d45819e67107a84381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/ConcreteSmooth_MAODS.png using Guid(0a02ce20803245d45819e67107a84381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d85cddf40e8023f1cf41013f568e415') in 0.065490 seconds
+  Import took 0.072608 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000399 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/Resources/Common/Default_Materials/Materials/AstrofishGamesDiscord.png
+  artifactKey: Guid(ae2631e12ef5d484391568bf3eea13fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/Resources/Common/Default_Materials/Materials/AstrofishGamesDiscord.png using Guid(ae2631e12ef5d484391568bf3eea13fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77f98ca0bfc3027f87dfaa7185aee188') in 0.038394 seconds
+  Import took 0.045855 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000444 seconds.
+  path: Assets/Art/Textures/General/Brass_MAODS.png
+  artifactKey: Guid(3008d6bc83d360041817752724fa2f4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/Brass_MAODS.png using Guid(3008d6bc83d360041817752724fa2f4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa5eacf4c7ef3d896b4e448bed742b12') in 0.090316 seconds
+  Import took 0.097740 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Art/Textures/General/ConcretePolished_MAODS.png
+  artifactKey: Guid(5462461448baad44ebff238191c85a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/ConcretePolished_MAODS.png using Guid(5462461448baad44ebff238191c85a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '335c00f19fcbfb67763d195b9f0a0980') in 0.044289 seconds
+  Import took 0.052285 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000313 seconds.
+  path: Assets/Art/Textures/General/Fabric_MAODS.png
+  artifactKey: Guid(500a00ffd0d96724eba029d2f61b5708) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/Fabric_MAODS.png using Guid(500a00ffd0d96724eba029d2f61b5708) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18604a0dda0a00a0d54092ef56fc7d4f') in 0.059473 seconds
+  Import took 0.066989 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000425 seconds.
+  path: Assets/Art/Textures/General/ConcreteTaupe_02_Normal.png
+  artifactKey: Guid(a576bd1917d2ab840962608924503cfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/ConcreteTaupe_02_Normal.png using Guid(a576bd1917d2ab840962608924503cfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bca93fea533073187240f08c7a48cdc') in 0.069972 seconds
+  Import took 0.077028 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000461 seconds.
+  path: Assets/Art/Textures/General/Bamboo_A_Albedo.png
+  artifactKey: Guid(d0988f211eac8ca4d84dd1290ce650de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/Bamboo_A_Albedo.png using Guid(d0988f211eac8ca4d84dd1290ce650de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0741518f1e0dbef9266b9ff1f38492b') in 0.045488 seconds
+  Import took 0.055151 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000392 seconds.
+  path: Assets/Art/Textures/General/ConcreteRough_MAODS.png
+  artifactKey: Guid(d2a4e8cbaf150bd4da04ea6b4f5ca2a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/ConcreteRough_MAODS.png using Guid(d2a4e8cbaf150bd4da04ea6b4f5ca2a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1abec89b8787e79ff8bcc6358cc96201') in 0.061957 seconds
+  Import took 0.069389 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000319 seconds.
+  path: Assets/Art/Textures/General/Brass_Normal.png
+  artifactKey: Guid(859b2995968925148b3bf58b641f49ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/Brass_Normal.png using Guid(859b2995968925148b3bf58b641f49ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b52ee7fdfb81745c6ea9b0d2cbc6a002') in 0.056459 seconds
+  Import took 0.063165 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000448 seconds.
+  path: Assets/Art/Textures/General/ConcreteMatteGrey_MAODS.png
+  artifactKey: Guid(4908c5801c2e45f4ba41d435be86f5fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/ConcreteMatteGrey_MAODS.png using Guid(4908c5801c2e45f4ba41d435be86f5fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ebd2ad428368ff68641d93516bba55d') in 0.059254 seconds
+  Import took 0.066162 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000362 seconds.
+  path: Assets/Art/Textures/General/ConcreteHoles_Albedo.png
+  artifactKey: Guid(2b99f0294fbead04c982891ea9dffe34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/ConcreteHoles_Albedo.png using Guid(2b99f0294fbead04c982891ea9dffe34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd09edc36bda0d25dc1f5632a282b512') in 0.030649 seconds
+  Import took 0.038284 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000411 seconds.
+  path: Assets/Art/Textures/General/Fabric_Normal.png
+  artifactKey: Guid(f405b09ae172b7142abe821e0c6dad19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/Fabric_Normal.png using Guid(f405b09ae172b7142abe821e0c6dad19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7259c488e4926321387b3c3e7bec8ac') in 0.045188 seconds
+  Import took 0.051090 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/Art/Textures/General/Drain_MAODS.png
+  artifactKey: Guid(6803a8a95b76cb44c9e5cb807d8c1612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/Drain_MAODS.png using Guid(6803a8a95b76cb44c9e5cb807d8c1612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf110318a204bab46af16e7efb29bf94') in 0.072501 seconds
+  Import took 0.078665 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000363 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/Resources/Common/Default_Materials/Blank_Blue.png
+  artifactKey: Guid(097c40f119ada6541992e44c4026d015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/Resources/Common/Default_Materials/Blank_Blue.png using Guid(097c40f119ada6541992e44c4026d015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eecb243819a25a2cce9521ede7a02806') in 0.009895 seconds
+  Import took 0.017178 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000476 seconds.
+  path: Assets/Art/Textures/General/DecalSheet_01A_MOADS.png
+  artifactKey: Guid(875044e800abcbe47985126630618483) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/DecalSheet_01A_MOADS.png using Guid(875044e800abcbe47985126630618483) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b362a86a6de4142442c8c7803dab480') in 0.054145 seconds
+  Import took 0.061972 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000361 seconds.
+  path: Assets/Art/Textures/General/ConcreteTaupe_02_MAODS.png
+  artifactKey: Guid(912a7363561061045b429752f3524335) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/ConcreteTaupe_02_MAODS.png using Guid(912a7363561061045b429752f3524335) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bee2f4b33799ad5876ef84f6b6aa65de') in 0.055717 seconds
+  Import took 0.065253 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000458 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Terrain/Mats/AstroGrass_Fresh_ALBEDO_2k.tif
+  artifactKey: Guid(2d55eca7bf12a1740a1299b20623570b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Terrain/Mats/AstroGrass_Fresh_ALBEDO_2k.tif using Guid(2d55eca7bf12a1740a1299b20623570b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6b6fd47c47a09ef758e00ab59cbbd72') in 0.017965 seconds
+  Import took 0.026417 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000403 seconds.
+  path: Assets/Art/Textures/General/ConcreteHoles_DetailMap.png
+  artifactKey: Guid(e29d5dd2ec8d21644bfc76132a215c85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/ConcreteHoles_DetailMap.png using Guid(e29d5dd2ec8d21644bfc76132a215c85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71bf039faee827f5cbe4141775275f05') in 0.026841 seconds
+  Import took 0.037571 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000378 seconds.
+  path: Assets/HDRPDefaultResources/DefaultHDRISky.exr
+  artifactKey: Guid(54a3a0570aebe8949bec4966f1376581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPDefaultResources/DefaultHDRISky.exr using Guid(54a3a0570aebe8949bec4966f1376581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba803d04e4a84a71c7c754c154cc07fb') in 0.091166 seconds
+  Import took 0.099346 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000467 seconds.
+  path: Assets/Art/Textures/General/ConcreteSmooth_Normal.png
+  artifactKey: Guid(5dab167b145f43a4f9498319685de109) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/ConcreteSmooth_Normal.png using Guid(5dab167b145f43a4f9498319685de109) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee5c5e9ddb54284b55ebe37307435419') in 0.036345 seconds
+  Import took 0.043789 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000331 seconds.
+  path: Assets/Art/Textures/General/DecalPuddle_01_Albedo.png
+  artifactKey: Guid(fa8928ff6cd67b74a93780ae9e05ce67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/DecalPuddle_01_Albedo.png using Guid(fa8928ff6cd67b74a93780ae9e05ce67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b7e95824a8e8aece5970fdee9aff2e4') in 0.075479 seconds
+  Import took 0.083278 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000329 seconds.
+  path: Assets/Art/Textures/General/Bush_01_BC.png
+  artifactKey: Guid(a78b571da66b42a4797a35454d64a71d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/Bush_01_BC.png using Guid(a78b571da66b42a4797a35454d64a71d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e1c4690c9be6a25f41f4f52bd04cfd9') in 0.066529 seconds
+  Import took 0.075476 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/Art/Textures/General/Drain_Albedo.png
+  artifactKey: Guid(32b7fa2fb1f076a429544d2574b26852) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/Drain_Albedo.png using Guid(32b7fa2fb1f076a429544d2574b26852) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e12f426e6302931b5226bb4d4ef2f954') in 0.076837 seconds
+  Import took 0.082792 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000356 seconds.
+  path: Assets/Art/Textures/General/Bush_01_Normal.png
+  artifactKey: Guid(f9d8b252b0a372e409bd532d908b970d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/Bush_01_Normal.png using Guid(f9d8b252b0a372e409bd532d908b970d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79d4baea315db02cba0e0d3efb98e50a') in 0.070749 seconds
+  Import took 0.078657 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000368 seconds.
+  path: Assets/Art/Textures/General/Drain_Normal.png
+  artifactKey: Guid(bef180c5d187f6442b7312284cfb67a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/Drain_Normal.png using Guid(bef180c5d187f6442b7312284cfb67a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17152aa098a3933d08b3af1bb3fceedd') in 0.036567 seconds
+  Import took 0.044332 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000350 seconds.
+  path: Assets/Art/Textures/General/ConcreteTaupe_02_DetailMap.png
+  artifactKey: Guid(4862aa5e01ca94340941228f6ca84295) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/ConcreteTaupe_02_DetailMap.png using Guid(4862aa5e01ca94340941228f6ca84295) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '747cf518079fdb1ad0bd62f48b9eae9f') in 0.125504 seconds
+  Import took 0.132327 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/Art/Textures/General/Bamboo_A_Normal.png
+  artifactKey: Guid(c92c870449b56f94f9a1fc7573e5f791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/Bamboo_A_Normal.png using Guid(c92c870449b56f94f9a1fc7573e5f791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e114acb7e3894abb2ef0deb9892aae9') in 0.073362 seconds
+  Import took 0.081049 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000418 seconds.
+  path: Assets/Art/Textures/General/Bamboo_A_Height.png
+  artifactKey: Guid(653861b580438e1429c55953041fab8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/Bamboo_A_Height.png using Guid(653861b580438e1429c55953041fab8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a20318ad9bfe78f706ec1acffce0a0bb') in 0.060368 seconds
+  Import took 0.066669 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000343 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/Resources/Common/Default_Materials/Materials/Checkers_T1_MaskMap.png
+  artifactKey: Guid(9017c8cccb80648418625bae2b861465) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/Resources/Common/Default_Materials/Materials/Checkers_T1_MaskMap.png using Guid(9017c8cccb80648418625bae2b861465) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe0a0dc5b833ab723c66042bedf66f84') in 0.008650 seconds
+  Import took 0.014969 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000381 seconds.
+  path: Assets/Art/Textures/General/ConcreteRough_Normal.png
+  artifactKey: Guid(d27afe850f7bc4b48bdc67be58bad39f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/ConcreteRough_Normal.png using Guid(d27afe850f7bc4b48bdc67be58bad39f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7edd763e5e2b8cb8935bbbbf249e0c33') in 0.071015 seconds
+  Import took 0.078924 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/Art/Textures/VFX/BamBoo_Leaves_MaskMap.png
+  artifactKey: Guid(e887296ef8b8ac942a2d4c372eadca2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/VFX/BamBoo_Leaves_MaskMap.png using Guid(e887296ef8b8ac942a2d4c372eadca2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '966e5f58b3f8de55ae5ff0b033f299a5') in 0.044469 seconds
+  Import took 0.050853 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000303 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/Resources/Common/Default_Materials/Materials/Checkers_T2_MaskMap.png
+  artifactKey: Guid(7b36cd530ffd46b40b6e31bf10bf8c95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/Resources/Common/Default_Materials/Materials/Checkers_T2_MaskMap.png using Guid(7b36cd530ffd46b40b6e31bf10bf8c95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04abda4c8c28d0daec3368f74b1cbbeb') in 0.006282 seconds
+  Import took 0.012098 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000379 seconds.
+  path: Assets/Art/Textures/General/ConcreteRough_Albedo.png
+  artifactKey: Guid(b474a739586db374ab8f3851f7c7295c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/ConcreteRough_Albedo.png using Guid(b474a739586db374ab8f3851f7c7295c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0026a018a25ad1596ee6d5c02b11146b') in 0.058005 seconds
+  Import took 0.065565 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000285 seconds.
+  path: Assets/Art/Textures/General/ConcreteMatteGrey_Albedo.png
+  artifactKey: Guid(218a2347bc3ab2f4a90790e60b49b388) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/ConcreteMatteGrey_Albedo.png using Guid(218a2347bc3ab2f4a90790e60b49b388) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecd10eec8ee83e274ab296e98bbab555') in 0.044050 seconds
+  Import took 0.051869 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000355 seconds.
+  path: Assets/Art/Textures/General/ConcretePolished_DetailMap.png
+  artifactKey: Guid(402efc12270e7ab4d8d599454be2cef5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/ConcretePolished_DetailMap.png using Guid(402efc12270e7ab4d8d599454be2cef5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de608c2dad68fc3c3afb604afd4a27c5') in 0.037915 seconds
+  Import took 0.046369 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000450 seconds.
+  path: Assets/Art/Textures/General/ConcreteSmooth_Albedo.png
+  artifactKey: Guid(7f40dbc8e6eb9bb479af6cfd14d6a031) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/ConcreteSmooth_Albedo.png using Guid(7f40dbc8e6eb9bb479af6cfd14d6a031) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc095414b81bd620898ccc90d2c10f60') in 0.055419 seconds
+  Import took 0.061982 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000343 seconds.
+  path: Assets/Art/Textures/VFX/Dust.png
+  artifactKey: Guid(e8f538c119b363e4eadafd64ec9a697c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/VFX/Dust.png using Guid(e8f538c119b363e4eadafd64ec9a697c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0b50adbfb5c45263c242eaafe7a841b') in 0.026850 seconds
+  Import took 0.034575 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000436 seconds.
+  path: Assets/Art/Textures/General/Fabric_Albedo.png
+  artifactKey: Guid(4979da18f5375524bbe219a2fc4f1900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/Fabric_Albedo.png using Guid(4979da18f5375524bbe219a2fc4f1900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82000f0a9c05c8b28c12d54ff83a6527') in 0.035463 seconds
+  Import took 0.042797 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000354 seconds.
+  path: Assets/Art/Textures/General/ConcreteHoles_Normal.png
+  artifactKey: Guid(87d1598cf2939b74e8ddb3a1064828cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/ConcreteHoles_Normal.png using Guid(87d1598cf2939b74e8ddb3a1064828cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c086c9dc303083e02dff8063c3a525df') in 0.063503 seconds
+  Import took 0.070168 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000374 seconds.
+  path: Assets/Art/Textures/General/Bamboo_A_Thickness.png
+  artifactKey: Guid(f6e15ec362c60e74cb03d3353528f79c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/Bamboo_A_Thickness.png using Guid(f6e15ec362c60e74cb03d3353528f79c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '703c6273ed4ccceeeac5e014b1be9b61') in 0.043695 seconds
+  Import took 0.050918 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000391 seconds.
+  path: Assets/Art/Textures/General/ConcretePolished_Normal.png
+  artifactKey: Guid(69f99c17a37103a489498dd2bfeb0e32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/ConcretePolished_Normal.png using Guid(69f99c17a37103a489498dd2bfeb0e32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '964ccf45b41fec2c520ccb00f1fea5ff') in 0.045355 seconds
+  Import took 0.092752 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000366 seconds.
+  path: Assets/Art/Textures/General/ConcreteMatteGrey_Normal.png
+  artifactKey: Guid(220d1c644e262794d9fff5f4c5543142) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/ConcreteMatteGrey_Normal.png using Guid(220d1c644e262794d9fff5f4c5543142) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5d24b5f77ac315fdf6b1b93bcdc8b6f') in 0.080986 seconds
+  Import took 0.088361 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000349 seconds.
+  path: Assets/Art/Textures/General/Bush_01_MAODS.png
+  artifactKey: Guid(5618ce3251344d743a4f94e92a46e6b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/Bush_01_MAODS.png using Guid(5618ce3251344d743a4f94e92a46e6b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12f9120ba952a97c7cd7b6e595e45398') in 0.056093 seconds
+  Import took 0.064733 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000348 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Terrain/Mats/AstroGrass_Fresh_NRM.tif
+  artifactKey: Guid(cea6497d9daea62479a84b10035ac36d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Terrain/Mats/AstroGrass_Fresh_NRM.tif using Guid(cea6497d9daea62479a84b10035ac36d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc6f9f76b853776a43dc63f77a845292') in 0.014836 seconds
+  Import took 0.021921 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.412376 seconds.
+  path: Assets/Art/Textures/General/Fern_01_Albedo.png
+  artifactKey: Guid(6da591420c95bbe4bb43b39c060602d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/Fern_01_Albedo.png using Guid(6da591420c95bbe4bb43b39c060602d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '760216a586c091c82af4268223bf2e40') in 0.041712 seconds
+  Import took 0.050435 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000395 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Foliage/Mats/Medieval_Foliage_Fern_MRAO_1k.tif
+  artifactKey: Guid(f743c73517eae9c4e8f6576b5b2cb04d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Foliage/Mats/Medieval_Foliage_Fern_MRAO_1k.tif using Guid(f743c73517eae9c4e8f6576b5b2cb04d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '245e3ae438eac5856f0a0d9304388705') in 0.008143 seconds
+  Import took 0.015189 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000383 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Bridges/Mats/Medieval_Bridge_ArchedFloorBottom_ALBEDO_2k.tif
+  artifactKey: Guid(d434865787cc9194cade5b6449bf2525) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Bridges/Mats/Medieval_Bridge_ArchedFloorBottom_ALBEDO_2k.tif using Guid(d434865787cc9194cade5b6449bf2525) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a084a3d0ecca0472287ec2e3a625a5c8') in 0.010753 seconds
+  Import took 0.017449 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000351 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Bridges/Mats/Medieval_Bridge_ArchedFloorBottom_NRM_2k.tif
+  artifactKey: Guid(2707f027bc7c4c14683d6e136cc09bba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Bridges/Mats/Medieval_Bridge_ArchedFloorBottom_NRM_2k.tif using Guid(2707f027bc7c4c14683d6e136cc09bba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84418f62e28e97bd80196739c014c09f') in 0.034354 seconds
+  Import took 0.044992 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000324 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Roofs/Mats/Medieval_RoofPeaked_4k_MaskMap.png
+  artifactKey: Guid(d92b2cc701feb584a96e08fe698e285f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Roofs/Mats/Medieval_RoofPeaked_4k_MaskMap.png using Guid(d92b2cc701feb584a96e08fe698e285f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06e673575057590a048540794aaad43f') in 0.012322 seconds
+  Import took 0.019800 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Fences/Mats/Medieval_Fences_NRM_4k.tif
+  artifactKey: Guid(69b1b9d44f71c404d9b1434ed263a403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Fences/Mats/Medieval_Fences_NRM_4k.tif using Guid(69b1b9d44f71c404d9b1434ed263a403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e1e6c8c669bfc7b2a8af74fabce670e') in 0.031272 seconds
+  Import took 0.042764 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000428 seconds.
+  path: Assets/Art/Textures/General/MarbleFloor_MAODS.png
+  artifactKey: Guid(a0ea9d15b87d52246b305917ad26afa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/MarbleFloor_MAODS.png using Guid(a0ea9d15b87d52246b305917ad26afa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91d73b93a28ba7bd4859fd0fb4f21d1e') in 0.055239 seconds
+  Import took 0.063861 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000378 seconds.
+  path: Assets/Art/Textures/General/MarbleFloor_Normal.png
+  artifactKey: Guid(ce933628a0d8b1e44bcecaed849d39d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/MarbleFloor_Normal.png using Guid(ce933628a0d8b1e44bcecaed849d39d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ec37587f7e6426837307c1d7efde369') in 0.083947 seconds
+  Import took 0.091600 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000367 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/PltfrmSprts/Mats/Medieval_PlatformsFoundationsPorch_8k_MaskMap.png
+  artifactKey: Guid(f95862025018bff46b5eb6b6122eeeb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/PltfrmSprts/Mats/Medieval_PlatformsFoundationsPorch_8k_MaskMap.png using Guid(f95862025018bff46b5eb6b6122eeeb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1ff19c7dec779354c9c29a72df4a2a0') in 0.011954 seconds
+  Import took 0.022560 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000450 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/PltfrmSprts/Mats/Medieval_PlatformsFoundationsPorch_MRAO_4k.tif
+  artifactKey: Guid(114ad66942988654cb85134ce2c8efdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/PltfrmSprts/Mats/Medieval_PlatformsFoundationsPorch_MRAO_4k.tif using Guid(114ad66942988654cb85134ce2c8efdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a4b4d1de1a8372011e73067340983f7') in 0.025615 seconds
+  Import took 0.036289 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Roofs/Mats/Medieval_Roofs_ALBEDO_4k.tif
+  artifactKey: Guid(6b01f5c4de7cde742b18e6543fc910c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Roofs/Mats/Medieval_Roofs_ALBEDO_4k.tif using Guid(6b01f5c4de7cde742b18e6543fc910c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df24b1c1d3c3f0edd66fb2d007ce3984') in 0.017684 seconds
+  Import took 0.026115 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000468 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Iron/Mats/Medieval_IronFixtures_All_4k_MaskMap.png
+  artifactKey: Guid(d91d646a3fca2084398105100ba77f14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Iron/Mats/Medieval_IronFixtures_All_4k_MaskMap.png using Guid(d91d646a3fca2084398105100ba77f14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4dcd637c63eec5dcdff32c622c37a7c') in 0.012672 seconds
+  Import took 0.021904 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000392 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Foliage/Mats/Medieval_Foliage_Ivy_ALBEDO_2k.tif
+  artifactKey: Guid(7dd591f08d2807f478dc475d802eb24e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Foliage/Mats/Medieval_Foliage_Ivy_ALBEDO_2k.tif using Guid(7dd591f08d2807f478dc475d802eb24e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7df9b936287295f8a062966b72c93c00') in 0.013287 seconds
+  Import took 0.020834 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Foliage/Mats/Medieval_Foliage_Fern_NRM_1k.tif
+  artifactKey: Guid(d1542fc4eca7f0c4abebadc877eb3ca5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Foliage/Mats/Medieval_Foliage_Fern_NRM_1k.tif using Guid(d1542fc4eca7f0c4abebadc877eb3ca5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '791ccc33bfbde6e998227276b95fb0c6') in 0.010382 seconds
+  Import took 0.017755 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000415 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/PltfrmSprts/Mats/Medieval_Fixtures_A_4k_MaskMap.png
+  artifactKey: Guid(29b7683d9df3d5c40b3877ed85ec8d1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/PltfrmSprts/Mats/Medieval_Fixtures_A_4k_MaskMap.png using Guid(29b7683d9df3d5c40b3877ed85ec8d1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67fd0fc5fe7f180d96121824aa530922') in 0.011300 seconds
+  Import took 0.017595 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000351 seconds.
+  path: Assets/Art/Textures/General/MarbleFloor_BC.png
+  artifactKey: Guid(d5a3a784f37fc8348b05981ce4ff7f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/MarbleFloor_BC.png using Guid(d5a3a784f37fc8348b05981ce4ff7f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e86e9bd1e4e3fd48825c2acacfce77a') in 0.059637 seconds
+  Import took 0.066193 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000361 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/PltfrmSprts/Mats/Medieval_Fixtures_MRAO_4k.tif
+  artifactKey: Guid(aed88fc466d60d949a94093febc1d985) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/PltfrmSprts/Mats/Medieval_Fixtures_MRAO_4k.tif using Guid(aed88fc466d60d949a94093febc1d985) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc304bc31932b70176aed2ef7e36e68f') in 0.014383 seconds
+  Import took 0.023383 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Iron/Mats/Medieval_IronFixtures_All_ALBEDO_4k.tif
+  artifactKey: Guid(18041fd29caaf494ebe26f538250e5c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Iron/Mats/Medieval_IronFixtures_All_ALBEDO_4k.tif using Guid(18041fd29caaf494ebe26f538250e5c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e775a10cd647e013327af56ad5aedf2') in 0.017639 seconds
+  Import took 0.025427 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000344 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/PltfrmSprts/Mats/Medieval_PlatformsFoundationsPorch_Albedo_8k.tif
+  artifactKey: Guid(c5e225d239df03447ae6cff892b1d520) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/PltfrmSprts/Mats/Medieval_PlatformsFoundationsPorch_Albedo_8k.tif using Guid(c5e225d239df03447ae6cff892b1d520) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5471cf3a818185ec27ce0ba8ad117790') in 0.047519 seconds
+  Import took 0.059266 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000415 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Roofs/Mats/Medieval_Roofs_4k_MaskMap.png
+  artifactKey: Guid(b3ecd9821bce6e84eb8a25e44242f57a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Roofs/Mats/Medieval_Roofs_4k_MaskMap.png using Guid(b3ecd9821bce6e84eb8a25e44242f57a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46aeb93b1ee2cff8e4be263bb0917613') in 0.014144 seconds
+  Import took 0.022246 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000385 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Iron/Mats/Medieval_IronFixtures_All_NRM_4k.tif
+  artifactKey: Guid(8de43e36a90425441927c5c5690d25e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Iron/Mats/Medieval_IronFixtures_All_NRM_4k.tif using Guid(8de43e36a90425441927c5c5690d25e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26726b85b90c7cfb03092022b0aad75a') in 0.024923 seconds
+  Import took 0.033389 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000440 seconds.
+  path: Assets/Art/Textures/General/Fern_01_MAODS.png
+  artifactKey: Guid(5cc84c9d58469314e83fe0a784b51fdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/Fern_01_MAODS.png using Guid(5cc84c9d58469314e83fe0a784b51fdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e6af4b3fc1e056fa55dc8b120f10b5b') in 0.022739 seconds
+  Import took 0.032390 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000415 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Fences/Mats/Medieval_Fences_4k_MaskMap.png
+  artifactKey: Guid(df420785af17f684eba88fb0273ae32c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Fences/Mats/Medieval_Fences_4k_MaskMap.png using Guid(df420785af17f684eba88fb0273ae32c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34469b91f88ebdaee9a8c39bdc4d73df') in 0.013204 seconds
+  Import took 0.022448 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000326 seconds.
+  path: Assets/Art/Textures/General/Fern_01_Normal.png
+  artifactKey: Guid(018214c643bf18643ae9648b144fc917) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/Fern_01_Normal.png using Guid(018214c643bf18643ae9648b144fc917) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33defb26857b5367be811b6fa4b3e656') in 0.048392 seconds
+  Import took 0.055338 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Foliage/Mats/Medieval_Foliage_Ivy_1k_MaskMap.png
+  artifactKey: Guid(02018df1a450ca944874824ebbda4f53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Foliage/Mats/Medieval_Foliage_Ivy_1k_MaskMap.png using Guid(02018df1a450ca944874824ebbda4f53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23047c33918d753b46243b0efaaa8970') in 0.009422 seconds
+  Import took 0.017849 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Foliage/Mats/Medieval_Foliage_Fern_1k_MaskMap.png
+  artifactKey: Guid(3c1bded46c7b61440be67802b8ed4a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Foliage/Mats/Medieval_Foliage_Fern_1k_MaskMap.png using Guid(3c1bded46c7b61440be67802b8ed4a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b849e8859a611cc78b871a3f33a51574') in 0.008715 seconds
+  Import took 0.016483 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Fences/Mats/Medieval_Fences_MRAO_4k.tif
+  artifactKey: Guid(40d25eb7b72756d47b3512d040b2a54e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Fences/Mats/Medieval_Fences_MRAO_4k.tif using Guid(40d25eb7b72756d47b3512d040b2a54e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b22a81f6b3b08622ef5807cc5c3f2a7') in 0.011931 seconds
+  Import took 0.018565 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Foliage/Mats/Medieval_Foliage_Ivy_NRM_1k.tif
+  artifactKey: Guid(ac14f8fec42cc224abbf9aaa3b69156b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Foliage/Mats/Medieval_Foliage_Ivy_NRM_1k.tif using Guid(ac14f8fec42cc224abbf9aaa3b69156b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd99170caba0d4aa52ae50632cfd39e1b') in 0.008794 seconds
+  Import took 0.015314 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/PltfrmSprts/Mats/Medieval_RaisedPlatforms_4k_MaskMap.png
+  artifactKey: Guid(604516681f336a4479eb4d87125e0aec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/PltfrmSprts/Mats/Medieval_RaisedPlatforms_4k_MaskMap.png using Guid(604516681f336a4479eb4d87125e0aec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afde7894c31bb68d88d701bcc40c93f3') in 0.011151 seconds
+  Import took 0.017404 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000324 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/Resources/Effects/Fire_Animation.tif
+  artifactKey: Guid(c68b4abcc99b4374ba6c516d517bb76f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/Resources/Effects/Fire_Animation.tif using Guid(c68b4abcc99b4374ba6c516d517bb76f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e88aab0010c8ea144653e37fd9cbe6d7') in 0.013098 seconds
+  Import took 0.019818 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000376 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Roofs/Mats/Medieval_RoofPeaked_MRAO_4k.tif
+  artifactKey: Guid(c5b7f04eba3ebbb40a0c8ca814c71c94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Roofs/Mats/Medieval_RoofPeaked_MRAO_4k.tif using Guid(c5b7f04eba3ebbb40a0c8ca814c71c94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e7840c7f13cb48cb308b91c79827258') in 0.010561 seconds
+  Import took 0.018397 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Iron/Mats/Medieval_IronFixtures_All_MRAO_4k.tif
+  artifactKey: Guid(8a007f465e3f32a469e8432c1922ed41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Iron/Mats/Medieval_IronFixtures_All_MRAO_4k.tif using Guid(8a007f465e3f32a469e8432c1922ed41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '003f1ecdaa4ec33a556dff49d3c10c89') in 0.012397 seconds
+  Import took 0.019012 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000308 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Roofs/Mats/Medieval_Roofs_MRAO_4k.tif
+  artifactKey: Guid(d67a69114c00d8d4198a1b3d19f6cc27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Roofs/Mats/Medieval_Roofs_MRAO_4k.tif using Guid(d67a69114c00d8d4198a1b3d19f6cc27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00a3d7ef464994e6c2e69e7eec177151') in 0.012649 seconds
+  Import took 0.019395 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Bridges/Mats/Medieval_Bridge_ArchedFloorBottom_MRAO_2k.tif
+  artifactKey: Guid(585adf3d15b36f141a545cd2d149a434) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Bridges/Mats/Medieval_Bridge_ArchedFloorBottom_MRAO_2k.tif using Guid(585adf3d15b36f141a545cd2d149a434) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c658880ad92e395cf91faad32120096') in 0.014335 seconds
+  Import took 0.021640 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/PltfrmSprts/Mats/Medieval_Fixtures_ALBEDO_4k.tif
+  artifactKey: Guid(4f02550561e348749b03cdfdba27e0bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/PltfrmSprts/Mats/Medieval_Fixtures_ALBEDO_4k.tif using Guid(4f02550561e348749b03cdfdba27e0bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f247126b33cc7a0177cea222f6de579') in 0.017163 seconds
+  Import took 0.025441 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Foliage/Mats/Medieval_Foliage_Fern_ALBEDO_1k.tif
+  artifactKey: Guid(e101aac0b0293b64ebf94bf2c761bd46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Foliage/Mats/Medieval_Foliage_Fern_ALBEDO_1k.tif using Guid(e101aac0b0293b64ebf94bf2c761bd46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb64084c65d3f34d581d99a10138d7be') in 0.010197 seconds
+  Import took 0.017368 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000306 seconds.
+  path: Assets/Art/Textures/General/Fern_01_Thickness.png
+  artifactKey: Guid(79009d2d8f52590449a72066c327d353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/General/Fern_01_Thickness.png using Guid(79009d2d8f52590449a72066c327d353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99eb0e8d47feb0900862aa5551f9767f') in 0.046691 seconds
+  Import took 0.054326 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000338 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/PltfrmSprts/Mats/Medieval_RaisedPlatforms_NRM_4k.tif
+  artifactKey: Guid(e3bec3955eb211548b24728eafb18ba8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/PltfrmSprts/Mats/Medieval_RaisedPlatforms_NRM_4k.tif using Guid(e3bec3955eb211548b24728eafb18ba8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa8244aa7ea7f35e470259cad9514005') in 0.024735 seconds
+  Import took 0.033330 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Roofs/Mats/Medieval_RoofPeaked_ALBEDO_4k.tif
+  artifactKey: Guid(27a97ce0d7ed47c48a2b1d9ae04198ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Roofs/Mats/Medieval_RoofPeaked_ALBEDO_4k.tif using Guid(27a97ce0d7ed47c48a2b1d9ae04198ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8f635ef16de449b874e07a9314add05') in 0.015229 seconds
+  Import took 0.024301 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000317 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Bridges/Mats/Medieval_Bridge_ArchedFloorBottom_2k_MaskMap.png
+  artifactKey: Guid(e49deb3b1e733b440a8f6f79db8e82a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Bridges/Mats/Medieval_Bridge_ArchedFloorBottom_2k_MaskMap.png using Guid(e49deb3b1e733b440a8f6f79db8e82a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4652182ea1ff91631669ab5e4d1d280') in 0.011506 seconds
+  Import took 0.018482 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000442 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Roofs/Mats/Medieval_RoofPeaked_NRM_4k.tif
+  artifactKey: Guid(69750f19aa0193342aee96ad9c1db418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Roofs/Mats/Medieval_RoofPeaked_NRM_4k.tif using Guid(69750f19aa0193342aee96ad9c1db418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebe1ec3a96281463afee6ab562413402') in 0.025284 seconds
+  Import took 0.034599 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000311 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/PltfrmSprts/Mats/Medieval_PlatformsFoundationsPorch_NRM_8k.tif
+  artifactKey: Guid(b8487b8260360354ea6188b7f4dfeac5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/PltfrmSprts/Mats/Medieval_PlatformsFoundationsPorch_NRM_8k.tif using Guid(b8487b8260360354ea6188b7f4dfeac5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e66381ead3f18418122fadb15f51eafc') in 0.078025 seconds
+  Import took 0.091217 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000467 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/PltfrmSprts/Mats/Medieval_RaisedPlatforms_MRAO_4k.tif
+  artifactKey: Guid(3cc32407bf8c4cb4684dd4a493b117bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/PltfrmSprts/Mats/Medieval_RaisedPlatforms_MRAO_4k.tif using Guid(3cc32407bf8c4cb4684dd4a493b117bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07be747055727acc8aaef177417c79d8') in 0.023942 seconds
+  Import took 0.033137 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000451 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/PltfrmSprts/Mats/Medieval_Fixtures_NRM_4k.tif
+  artifactKey: Guid(47f3528c8f0b8db4b802975846c359ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/PltfrmSprts/Mats/Medieval_Fixtures_NRM_4k.tif using Guid(47f3528c8f0b8db4b802975846c359ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '086f7d4afab3f057b97cdfb62fbe6a3e') in 0.023713 seconds
+  Import took 0.034512 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000594 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Foliage/Mats/Medieval_Foliage_Ivy_MRAO_1k.tif
+  artifactKey: Guid(3edea42c662ba3d4ca7502123014b1d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Foliage/Mats/Medieval_Foliage_Ivy_MRAO_1k.tif using Guid(3edea42c662ba3d4ca7502123014b1d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5a5377d79ee9bd080e0a443736a208d') in 0.011284 seconds
+  Import took 0.019192 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Fences/Mats/Medieval_Fences_ALBEDO_4k.tif
+  artifactKey: Guid(a2528aff6e3053d46a32e9c5f7531c00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/Fences/Mats/Medieval_Fences_ALBEDO_4k.tif using Guid(a2528aff6e3053d46a32e9c5f7531c00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '227bb9593d096bb8d2452e3ae5a6de8c') in 0.016602 seconds
+  Import took 0.024200 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000353 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/PltfrmSprts/Mats/Medieval_RaisedPlatforms_Albedo_4k.tif
+  artifactKey: Guid(f2219284f07d7f540aef4427939be642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/_Assets/PltfrmSprts/Mats/Medieval_RaisedPlatforms_Albedo_4k.tif using Guid(f2219284f07d7f540aef4427939be642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43f1e793c64215b089f046d5acf4875c') in 0.017524 seconds
+  Import took 0.026102 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 60.039150 seconds.
+  path: Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/Resources/Effects/Fire_Effect.prefab
+  artifactKey: Guid(a30204394f8251f4fb87b70857a6086e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ASTROFISH_GAMES/MEDIEVAL_SERIES/MEDIEVAL_VILLAGE_HD/Resources/Effects/Fire_Effect.prefab using Guid(a30204394f8251f4fb87b70857a6086e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87722d616ebd30fc2622fd0027e4e4f5') in 0.016084 seconds
+  Import took 0.024695 seconds .
+
