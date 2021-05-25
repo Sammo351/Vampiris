@@ -22,7 +22,14 @@ public class WeatherManager : MonoBehaviour
     // public AudioClip lightRainSound, heavyRainSound;
     [FoldoutGroup("Rain/Sound Objects")]
     public GameObject lightRainSoundObject, heavyRainSoundObject;
-    [FoldoutGroup("Fog", expanded: true)]
+    //[FoldoutGroup("Fog", expanded: true)]
+    [FoldoutGroup("Lightning", expanded: true)]
+    int maxSuccessiveLightningStrikes = 3;
+    [FoldoutGroup("Lightning", expanded: true)]
+    [MinMaxSlider(0, 7f, true)]
+    public Vector2 lightningSoundDelay = new Vector2(0f, 1.5f);
+    [FoldoutGroup("Lightning", expanded: true)]
+    public List<AudioClip> lightningSounds;
 
     public bool comingSoon = true;
     void Start()
@@ -94,8 +101,37 @@ public class WeatherManager : MonoBehaviour
         AudioHelper.Fade(currentRainSound, nextAudioSource);
     }
 
+    [FoldoutGroup("Lightning", expanded: true)]
+    [Button]
+    void SummonLightning()
+    {
+        float soundDelay = lightningSoundDelay.Next();
+        GameObject lg = new GameObject("Lightning Flash");
+        LightningFlash lightning = lg.AddComponent<LightningFlash>();
+        int flashAmount = Random.Range(1, maxSuccessiveLightningStrikes);
+        float[] flashDelays = new float[flashAmount];
+        List<AudioClip> clips = new List<AudioClip>();
+        for (int i = 0; i < flashAmount; i++)
+        {
 
 
+            float successiveDelay = Random.Range(0.3f, 0.8f);
+            flashDelays[i] = successiveDelay;
+        }
+        lightning.soundClips = lightningSounds.AnyDifferent(flashAmount).ToArray();
+        lightning.flashDelays = flashDelays;
+        lightning.distanceDelay = soundDelay;
+        lightning.Trigger();
+
+
+    }
+
+    IEnumerator PlayLightningSound(AudioClip clip, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        AudioSource.PlayClipAtPoint(clip, Vector3.zero);
+
+    }
 
 }
 /*

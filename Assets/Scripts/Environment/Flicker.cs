@@ -48,7 +48,6 @@ public class Flicker : MonoBehaviour
             float[] lastHSV = lamp.color.HSV();
             float newSaturation = Mathf.Clamp(lastHSV[1] + Random.Range(-maxSaturationChange, maxSaturationChange), targetSaturationRange.x, targetSaturationRange.y);
             float newBrightness = Mathf.Clamp(lastHSV[2] + Random.Range(-maxBrightnessChange, maxBrightnessChange), targetBrightnessRange.x, targetBrightnessRange.y);
-            Debug.Log(newSaturation);
             lamp.color = lamp.color.SetBrightness(newBrightness).SetSaturation(newSaturation);
             timeUntilFlicker = Random.Range(0.02f, 0.14f);
 

@@ -1,12 +1,34 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System.Linq;
 public static class Extensions
 {
     public static T Any<T>(this List<T> data)
     {
         return data[Random.Range(0, data.Count)];
+    }
+    public static List<T> Any<T>(this List<T> data, int amount = 2)
+    {
+        return data.OrderBy(x => Random.Range(0, 1f)).Take(5).ToList();
+    }
+    public static List<T> AnyDifferent<T>(this List<T> data, int amount = 2)
+    {
+        if (amount > data.Count) { return data; }
+        T[] copyArray = new T[data.Count];
+        List<T> copy;
+        data.CopyTo(copyArray);
+        copy = copyArray.ToList();
+        List<T> ret = new List<T>();
+        for (int i = 0; i < amount; i++)
+        {
+            int index = Random.Range(0, copy.Count);
+            T item = copy[index];
+            ret.Add(item);
+            copy.RemoveAt(index);
+        }
+
+        return ret;
     }
     public static T Any<T>(this T[] data)
     {
@@ -30,23 +52,27 @@ public static class Extensions
     {
         return g.transform.forward = lookDir;
     }
-
-
-    public static void KillChildren(this Transform t)
+    /// <summary>
+    ///  Returns random value between Vec.x and Vec.y
+    /// </summary>
+    /// <param name="vec"></param>
+    /// <returns></returns>
+    public static float Next(this Vector2 vec)
     {
-        // for (int i = 0; i < t.childCount; i++)
-        // {
-        //     try
-        //     {
-        //         GameObject.DestroyImmediate(t.GetChild(i).gameObject);
+        return Random.Range(vec.x, vec.y);
+    }
 
-        //     }
-        //     catch (System.Exception)
-        //     {
-        //         GameObject.Destroy(t.GetChild(i).gameObject);
 
-        //     }
-
-        // }
+    public static Vector3 SetX(this Vector3 vec, float x)
+    {
+        return new Vector3(x, vec.y, vec.z);
+    }
+    public static Vector3 SetY(this Vector3 vec, float y)
+    {
+        return new Vector3(vec.x, y, vec.z);
+    }
+    public static Vector3 SetZ(this Vector3 vec, float z)
+    {
+        return new Vector3(vec.x, vec.y, z);
     }
 }
