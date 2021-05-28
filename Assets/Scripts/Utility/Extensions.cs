@@ -75,4 +75,16 @@ public static class Extensions
     {
         return new Vector3(vec.x, vec.y, z);
     }
+
+    public static void KillChildren(this GameObject gameObject, bool immediate = false)
+    {
+        int count = gameObject.transform.childCount;
+        for (int i = count - 1; i >= 0; i--)
+        {
+            Transform child = gameObject.transform.GetChild(i);
+            if (immediate) { GameObject.DestroyImmediate(child.gameObject); }
+            else { GameObject.Destroy(child.gameObject); }
+        }
+    }
+
 }

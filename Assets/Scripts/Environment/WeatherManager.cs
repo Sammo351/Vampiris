@@ -133,6 +133,16 @@ public class WeatherManager : MonoBehaviour
 
     }
 
+    // void FindLightWithShadow()
+    // {
+    //     List<Light> lights = Resources.FindObjectsOfTypeAll<Light>().Where(x => x.type == LightType.Directional).Where(x => x.shadows != LightShadows.None).ToList();
+    //     if (lights.Count == 0)
+    //     {
+    //     }
+    //     GetComponent<Light>().shadows = LightShadows.Hard;
+    // }
+
+
 }
 /*
 thunder/lightning (sound/lighting)

@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System.Linq;
 public class LightningFlash : MonoBehaviour
 {
     public float[] flashDelays;
@@ -25,8 +25,11 @@ public class LightningFlash : MonoBehaviour
         light = lg.AddComponent<Light>();
         lg.transform.SetParent(transform);
         lg.transform.eulerAngles = lg.transform.eulerAngles.SetY(Random.Range(0, 360));
-        light.type = LightType.Directional;
+        light.type = LightType.Point;
+        light.shadowRadius = 120;
         light.intensity = 0;
+        light.range = 320;
+        light.shadows = LightShadows.Hard;
         for (int i = 0; i < flashDelays.Length; i++)
         {
             float flashDelay = flashDelays[i];
@@ -44,7 +47,7 @@ public class LightningFlash : MonoBehaviour
         yield return new WaitForSeconds(delay);
         StartCoroutine(Thunder(distanceDelay, index));
         light.intensity = 2000;
-        light.shadows = LightShadows.Hard;
+        light.transform.position = new Vector3(Random.Range(-100, 100), 40, Random.Range(-100, 100));
         StartCoroutine(StopStrike());
 
     }
@@ -60,4 +63,5 @@ public class LightningFlash : MonoBehaviour
         AudioSource.PlayClipAtPoint(soundClips[index], Vector3.zero);
 
     }
+
 }
