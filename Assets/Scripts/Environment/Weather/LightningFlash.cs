@@ -24,13 +24,19 @@ public class LightningFlash : MonoBehaviour
         GameObject lg = new GameObject();
         light = lg.AddComponent<Light>();
         lg.transform.SetParent(transform);
-        lg.transform.eulerAngles = lg.transform.eulerAngles.SetY(Random.Range(0, 360));
+        //lg.transform.eulerAngles = lg.transform.eulerAngles.SetY(Random.Range(0, 360));
         light.type = LightType.Point;
         light.shadowRadius = 120;
         light.intensity = 0;
         light.range = 320;
+        light.shadowResolution = UnityEngine.Rendering.LightShadowResolution.VeryHigh;
+        light.shadowStrength = 1000;
         light.shadows = LightShadows.Hard;
-        for (int i = 0; i < flashDelays.Length; i++)
+
+
+        StartCoroutine(Strike(0, 0));
+        Events.Instance.OnLightningStrike.Invoke();
+        for (int i = 1; i < flashDelays.Length; i++)
         {
             float flashDelay = flashDelays[i];
             StartCoroutine(Strike(flashDelay, i));
@@ -46,14 +52,17 @@ public class LightningFlash : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         StartCoroutine(Thunder(distanceDelay, index));
-        light.intensity = 2000;
-        light.transform.position = new Vector3(Random.Range(-100, 100), 40, Random.Range(-100, 100));
+        light.intensity = 20000000;
+        Vector3 playerPos = GameObject.FindWithTag("Player").Pos();
+        float offsetMax = 40;
+        light.transform.position = new Vector3(Random.Range(-offsetMax, offsetMax), 60, Random.Range(-offsetMax, offsetMax)) + playerPos;
         StartCoroutine(StopStrike());
+
 
     }
     IEnumerator StopStrike()
     {
-        yield return new WaitForSeconds(Random.Range(0.03f, 0.3f));
+        yield return new WaitForSeconds(0.1f);
         light.shadows = LightShadows.None;
         light.intensity = 0;
     }

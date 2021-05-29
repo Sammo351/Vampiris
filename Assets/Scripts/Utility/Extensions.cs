@@ -86,5 +86,23 @@ public static class Extensions
             else { GameObject.Destroy(child.gameObject); }
         }
     }
+    /// <summary>
+    /// Returns all children and their children...and their children......and their children...im bored, you get the point
+    /// </summary>
+    /// <param name="gameObject"></param>
+    /// <returns></returns>
+    public static List<GameObject> GetDescendants(this GameObject gameObject, List<GameObject> list = null)
+    {
+        if (list == null) { list = new List<GameObject>(); }
+        int childCount = gameObject.transform.childCount;
+        for (int i = 0; i < childCount; i++)
+        {
+            GameObject child = gameObject.transform.GetChild(i).gameObject;
+            list.Add(child);
+            GetDescendants(child, list);
+        }
+
+        return list;
+    }
 
 }

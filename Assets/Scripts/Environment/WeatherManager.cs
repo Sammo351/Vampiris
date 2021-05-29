@@ -14,10 +14,10 @@ public class WeatherManager : MonoBehaviour
     [Range(0, 12)]
     public float windForce = 0;
 
-    public enum RainFall { None, Light, Heavy };
+
     [FoldoutGroup("Rain", expanded: true)]
-    public RainFall rainFall = RainFall.Light;
-    RainFall prevRainFall = RainFall.Light;
+    public Enums.RainFall rainFall = Enums.RainFall.Light;
+    Enums.RainFall prevRainFall = Enums.RainFall.Light;
     // [FoldoutGroup("Rain/Sounds")]
     // public AudioClip lightRainSound, heavyRainSound;
     [FoldoutGroup("Rain/Sound Objects")]
@@ -42,6 +42,7 @@ public class WeatherManager : MonoBehaviour
     {
 
     }
+
     void OnValidate()
     {
         GetComponentInChildren<WindZone>().windMain = windForce;
@@ -51,12 +52,13 @@ public class WeatherManager : MonoBehaviour
         }
         if (rainFall != prevRainFall)
         {
+            Events.Instance.OnRainChanged.Invoke(rainFall);
             SetRain(rainFall);
             prevRainFall = rainFall;
         }
     }
 
-    public void SetRain(RainFall fall)
+    public void SetRain(Enums.RainFall fall)
     {
 
         rainFall = fall;
@@ -68,8 +70,8 @@ public class WeatherManager : MonoBehaviour
             ParticleSystem colliding = parent.transform.Find("Collision").GetComponent<ParticleSystem>();
 
             var fallEmi = falling.emission;
-            fallEmi.rateOverTime = (fall == RainFall.Heavy ? 900 : fall == RainFall.Light ? 100 : 0);
-            float collideRate = fall == RainFall.Heavy ? 900 : fall == RainFall.Light ? 100 : 0;
+            fallEmi.rateOverTime = (fall == Enums.RainFall.Heavy ? 900 : fall == Enums.RainFall.Light ? 100 : 0);
+            float collideRate = fall == Enums.RainFall.Heavy ? 900 : fall == Enums.RainFall.Light ? 100 : 0;
             StartCoroutine(UpdateRainCollisions(colliding, collideRate));
 
             SetRainSound(rainFall);
@@ -83,11 +85,11 @@ public class WeatherManager : MonoBehaviour
         var colEmi = system.emission;
         colEmi.rateOverTime = rate;
     }
-    void SetRainSound(RainFall fall)
+    void SetRainSound(Enums.RainFall fall)
     {
         Transform soundParent = transform.Find("Sounds");
 
-        GameObject nextRainSoundObjectTemplate = fall == RainFall.Heavy ? heavyRainSoundObject : fall == RainFall.Light ? lightRainSoundObject : null;
+        GameObject nextRainSoundObjectTemplate = fall == Enums.RainFall.Heavy ? heavyRainSoundObject : fall == Enums.RainFall.Light ? lightRainSoundObject : null;
         AudioSource currentRainSound = soundParent.GetComponentInChildren<AudioSource>();
         GameObject nextRainSoundObject = null;
         if (nextRainSoundObjectTemplate != null)

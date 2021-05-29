@@ -16,7 +16,6 @@ public class PrefabTiler : MonoBehaviour
     {
         if (liveBuild)
         {
-            Debug.Log("Validated");
             Trigger();
         }
     }
