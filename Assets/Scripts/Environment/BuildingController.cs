@@ -28,15 +28,25 @@ public class BuildingController : MonoBehaviour
         SetLights();
     }
     [Button]
-    void FindWindows()
+    public void FindWindows()
     {
         windows = gameObject.GetDescendants().Where(x => x.tag == "Window").ToList();
+        List<GameObject> windowParents = gameObject.GetDescendantsByName("Windows");
+
+        for (int i = 0; i < windowParents.Count; i++)
+        {
+            windows.AddRange(windowParents[i].GetChildren().Where(x => !windows.Contains(x)));
+
+        }
+
+
+
     }
     void FindLights()
     {
         lights = gameObject.GetComponentsInChildren<LightController>().ToList();
     }
-    void SetLights()
+    public void SetLights()
     {
 
         for (int i = 0; i < windows.Count; i++)

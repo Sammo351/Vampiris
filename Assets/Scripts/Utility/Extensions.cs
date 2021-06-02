@@ -76,6 +76,20 @@ public static class Extensions
         return new Vector3(vec.x, vec.y, z);
     }
 
+    public static Vector3 AdjustX(this Vector3 vec, float a)
+    {
+        return vec.SetX(vec.x + a);
+    }
+    public static Vector3 AdjustY(this Vector3 vec, float a)
+    {
+        return vec.SetY(vec.y + a);
+    }
+    public static Vector3 AdjustZ(this Vector3 vec, float a)
+    {
+        return vec.SetZ(vec.z + a);
+    }
+
+
     public static void KillChildren(this GameObject gameObject, bool immediate = false)
     {
         int count = gameObject.transform.childCount;
@@ -100,6 +114,23 @@ public static class Extensions
             GameObject child = gameObject.transform.GetChild(i).gameObject;
             list.Add(child);
             GetDescendants(child, list);
+        }
+
+        return list;
+    }
+    public static List<GameObject> GetDescendantsByName(this GameObject gameObject, string name)
+    {
+        return gameObject.GetDescendants().Where(x => x.name.ToLower() == name.ToLower()).ToList();
+    }
+    public static List<GameObject> GetChildren(this GameObject gameObject)
+    {
+        List<GameObject> list = new List<GameObject>();
+        int childCount = gameObject.transform.childCount;
+        for (int i = 0; i < childCount; i++)
+        {
+            GameObject child = gameObject.transform.GetChild(i).gameObject;
+            list.Add(child);
+
         }
 
         return list;
