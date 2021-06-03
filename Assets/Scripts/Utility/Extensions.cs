@@ -4,6 +4,7 @@ using UnityEngine;
 using System.Linq;
 public static class Extensions
 {
+
     public static T Any<T>(this List<T> data)
     {
         return data[Random.Range(0, data.Count)];
@@ -12,6 +13,7 @@ public static class Extensions
     {
         return data.OrderBy(x => Random.Range(0, 1f)).Take(5).ToList();
     }
+
     public static List<T> AnyDifferent<T>(this List<T> data, int amount = 2)
     {
         if (amount > data.Count) { return data; }

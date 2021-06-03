@@ -31,13 +31,13 @@ public class BuildingController : MonoBehaviour
     public void FindWindows()
     {
         windows = gameObject.GetDescendants().Where(x => x.tag == "Window").ToList();
-        List<GameObject> windowParents = gameObject.GetDescendantsByName("Windows");
+        // List<GameObject> windowParents = gameObject.GetDescendantsByName("Windows");
 
-        for (int i = 0; i < windowParents.Count; i++)
-        {
-            windows.AddRange(windowParents[i].GetChildren().Where(x => !windows.Contains(x)));
+        // for (int i = 0; i < windowParents.Count; i++)
+        // {
+        //     windows.AddRange(windowParents[i].GetChildren().Where(x => !windows.Contains(x)));
 
-        }
+        // }
 
 
 

@@ -5,10 +5,13 @@ using Sirenix.OdinInspector;
 using System.Linq;
 public class HouseBuilder : MonoBehaviour
 {
-    public enum HouseWidth { Two, Three };
+    public enum HouseWidth { Two = 2, Three = 3 };
+    public bool buildOnPlace = true;
+    [ShowIf("buildOnPlace")]
+    public bool randomiseOnPlace = true;
     [FoldoutGroup("Values")]
     [Min(1)]
-    [MaxValue(7)]
+    [MaxValue(4)]
     public int floors = 2;
     [FoldoutGroup("Values")]
     [EnumToggleButtons]
@@ -17,6 +20,8 @@ public class HouseBuilder : MonoBehaviour
     public float floorScale = 3.36f;
     [FoldoutGroup("Values")]
     public float baseScale = 4.6f;
+    [FoldoutGroup("Materials")]
+    public Material windowLit, windowUnlit;
     [FoldoutGroup("Layers")]
     public List<GameObject> lowerLayersTwo = new List<GameObject>();
     [FoldoutGroup("Layers")]
@@ -69,7 +74,8 @@ public class HouseBuilder : MonoBehaviour
         List<GameObject> midLayers = width == HouseWidth.Two ? midLayersTwo : midLayersThree;
         for (int i = 1; i < floors; i++)
         {
-            GameObject layer = Instantiate(midLayers.Any(), transform.position.AdjustY(baseScale + (floorScale * (i - 1))), Quaternion.identity);
+            Vector3 angle = new Vector3(0, 90 * Random.Range(0, 4), 0);
+            GameObject layer = Instantiate(midLayers.Any(), transform.position.AdjustY(baseScale + (floorScale * (i - 1))), Quaternion.Euler(angle));
             layer.transform.SetParent(transform);
             layer.AddComponent<BoxCollider>();
             layers.Add(layer);
@@ -105,9 +111,20 @@ public class HouseBuilder : MonoBehaviour
             prefab.name = buildingName;
             BuildingController controller = prefab.AddComponent<BuildingController>();
             DestroyImmediate(prefab.GetComponent<HouseBuilder>());
+            controller.windowLit = windowLit;
+            controller.windowUnlit = windowUnlit;
             controller.FindWindows();
             controller.SetLights();
-            transform.position += new Vector3(1, 0, 0) * 8;
+            transform.position += new Vector3(0, 0, 1) * 8;
+            if (buildOnPlace)
+            {
+                if (randomiseOnPlace)
+                {
+                    width = (HouseWidth)(Random.Range(0, 1) + 2);
+                    floors = Random.Range(1, 5);
+                }
+                Build();
+            }
         }
     }
 
