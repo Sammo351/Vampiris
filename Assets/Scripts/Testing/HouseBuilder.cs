@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
 using System.Linq;
+using UnityEditor;
 public class HouseBuilder : MonoBehaviour
 {
     public enum HouseWidth { Two = 2, Three = 3 };
@@ -23,20 +24,20 @@ public class HouseBuilder : MonoBehaviour
     [FoldoutGroup("Materials")]
     public Material windowLit, windowUnlit;
     [FoldoutGroup("Layers")]
-    public List<GameObject> lowerLayersTwo = new List<GameObject>();
+    public List<Object> lowerLayersTwo = new List<Object>();
     [FoldoutGroup("Layers")]
-    public List<GameObject> lowerLayersThree = new List<GameObject>();
+    public List<Object> lowerLayersThree = new List<Object>();
     [FoldoutGroup("Layers")]
-    public List<GameObject> midLayersTwo = new List<GameObject>();
+    public List<Object> midLayersTwo = new List<Object>();
     [FoldoutGroup("Layers")]
-    public List<GameObject> midLayersThree = new List<GameObject>();
+    public List<Object> midLayersThree = new List<Object>();
     [FoldoutGroup("Layers")]
-    public List<GameObject> upperLayersTwo = new List<GameObject>();
+    public List<Object> upperLayersTwo = new List<Object>();
     [FoldoutGroup("Layers")]
-    public List<GameObject> upperLayersThree = new List<GameObject>();
+    public List<Object> upperLayersThree = new List<Object>();
     List<GameObject> layers = new List<GameObject>();
 
-
+    GameObject tempParent;
     // Start is called before the first frame update
     void Start()
     {
@@ -57,6 +58,10 @@ public class HouseBuilder : MonoBehaviour
     void Build()
     {
         KillChildren();
+        tempParent = new GameObject("Building");
+        tempParent.Pos(transform.position);
+        tempParent.transform.rotation = transform.rotation;
+        tempParent.transform.SetParent(transform);
         layers = new List<GameObject>();
         BuildFloor();
         BuildLayers();
@@ -71,29 +76,37 @@ public class HouseBuilder : MonoBehaviour
     void BuildLayers()
     {
 
-        List<GameObject> midLayers = width == HouseWidth.Two ? midLayersTwo : midLayersThree;
+        List<Object> midLayers = width == HouseWidth.Two ? midLayersTwo : midLayersThree;
         for (int i = 1; i < floors; i++)
         {
             Vector3 angle = new Vector3(0, 90 * Random.Range(0, 4), 0);
-            GameObject layer = Instantiate(midLayers.Any(), transform.position.AdjustY(baseScale + (floorScale * (i - 1))), Quaternion.Euler(angle));
-            layer.transform.SetParent(transform);
+
+            GameObject layer = (GameObject)PrefabUtility.InstantiatePrefab(midLayers.Any());//, transform.position.AdjustY(baseScale + (floorScale * (i - 1))), Quaternion.Euler(angle));
+            layer.Pos(transform.position.AdjustY(baseScale + (floorScale * (i - 1))));
+            layer.transform.rotation = Quaternion.Euler(angle);
+            layer.transform.SetParent(tempParent.transform);
             layer.AddComponent<BoxCollider>();
             layers.Add(layer);
         }
     }
     void BuildFloor()
     {
-        List<GameObject> possibleLayers = width == HouseWidth.Two ? lowerLayersTwo : lowerLayersThree;
-        GameObject layer = Instantiate(possibleLayers.Any(), transform.position, Quaternion.identity);
-        layer.transform.SetParent(transform);
+        List<Object> possibleLayers = width == HouseWidth.Two ? lowerLayersTwo : lowerLayersThree;
+        GameObject layer = (GameObject)PrefabUtility.InstantiatePrefab(possibleLayers.Any());
+        layer.Pos(transform.position);
+        layer.transform.SetParent(tempParent.transform);
         layer.AddComponent<BoxCollider>();
         layers.Add(layer);
     }
     void BuildRoof()
     {
-        List<GameObject> possibleLayers = width == HouseWidth.Two ? upperLayersTwo : upperLayersThree;
-        GameObject layer = Instantiate(possibleLayers.Any(), transform.position.AdjustY(baseScale + (floorScale * (layers.Count - 1))), Quaternion.identity);
-        layer.transform.SetParent(transform);
+        Vector3 angle = new Vector3(0, 90 * Random.Range(0, 4), 0);
+        List<Object> possibleLayers = width == HouseWidth.Two ? upperLayersTwo : upperLayersThree;
+        //GameObject layer = Instantiate(possibleLayers.Any(), transform.position.AdjustY(baseScale + (floorScale * (layers.Count - 1))), Quaternion.Euler(angle));
+        GameObject layer = (GameObject)PrefabUtility.InstantiatePrefab(possibleLayers.Any());
+        layer.Pos(transform.position.AdjustY(baseScale + (floorScale * (layers.Count - 1))));
+        layer.transform.rotation = Quaternion.Euler(angle);
+        layer.transform.SetParent(tempParent.transform);
 
         layers.Add(layer);
     }
@@ -106,16 +119,18 @@ public class HouseBuilder : MonoBehaviour
     {
         if (buildingName.Length > 0)
         {
-            GameObject prefab = GameObject.Instantiate(gameObject, transform.position, transform.rotation);
-            UnityEditor.Undo.RecordObject(prefab, "Created new building");
-            prefab.name = buildingName;
-            BuildingController controller = prefab.AddComponent<BuildingController>();
-            DestroyImmediate(prefab.GetComponent<HouseBuilder>());
+            //GameObject prefab = (GameObject)PrefabUtility.InstantiatePrefab(gameObject);//, transform.position, transform.rotation);
+            //prefab.Pos(transform.position);
+            //prefab.transform.rotation = transform.rotation;
+            UnityEditor.Undo.RecordObject(transform, "Created new building");
+            tempParent.name = buildingName;
+            tempParent.transform.SetParent(null);
+            BuildingController controller = tempParent.AddComponent<BuildingController>();
             controller.windowLit = windowLit;
             controller.windowUnlit = windowUnlit;
             controller.FindWindows();
             controller.SetLights();
-            transform.position += new Vector3(0, 0, 1) * 8;
+            transform.position += transform.right * 8;
             if (buildOnPlace)
             {
                 if (randomiseOnPlace)
