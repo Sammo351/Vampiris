@@ -83,7 +83,7 @@ public class HouseBuilder : MonoBehaviour
 
             GameObject layer = (GameObject)PrefabUtility.InstantiatePrefab(midLayers.Any());//, transform.position.AdjustY(baseScale + (floorScale * (i - 1))), Quaternion.Euler(angle));
             layer.Pos(transform.position.AdjustY(baseScale + (floorScale * (i - 1))));
-            layer.transform.rotation = Quaternion.Euler(angle);
+            layer.transform.rotation = Quaternion.Euler(angle + transform.rotation.eulerAngles);
             layer.transform.SetParent(tempParent.transform);
             layer.AddComponent<BoxCollider>();
             layers.Add(layer);
@@ -94,7 +94,9 @@ public class HouseBuilder : MonoBehaviour
         List<Object> possibleLayers = width == HouseWidth.Two ? lowerLayersTwo : lowerLayersThree;
         GameObject layer = (GameObject)PrefabUtility.InstantiatePrefab(possibleLayers.Any());
         layer.Pos(transform.position);
+        layer.transform.rotation = transform.rotation;
         layer.transform.SetParent(tempParent.transform);
+
         layer.AddComponent<BoxCollider>();
         layers.Add(layer);
     }
@@ -105,7 +107,7 @@ public class HouseBuilder : MonoBehaviour
         //GameObject layer = Instantiate(possibleLayers.Any(), transform.position.AdjustY(baseScale + (floorScale * (layers.Count - 1))), Quaternion.Euler(angle));
         GameObject layer = (GameObject)PrefabUtility.InstantiatePrefab(possibleLayers.Any());
         layer.Pos(transform.position.AdjustY(baseScale + (floorScale * (layers.Count - 1))));
-        layer.transform.rotation = Quaternion.Euler(angle);
+        layer.transform.rotation = Quaternion.Euler(angle + transform.rotation.eulerAngles);
         layer.transform.SetParent(tempParent.transform);
 
         layers.Add(layer);
@@ -130,7 +132,7 @@ public class HouseBuilder : MonoBehaviour
             controller.windowUnlit = windowUnlit;
             controller.FindWindows();
             controller.SetLights();
-            transform.position += transform.right * 8;
+            transform.position += transform.forward * 8;
             if (buildOnPlace)
             {
                 if (randomiseOnPlace)
