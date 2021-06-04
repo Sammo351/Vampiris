@@ -22,8 +22,6 @@ Material:
   - TransparentDepthPrepass
   - TransparentDepthPostpass
   - TransparentBackface
-  - DecalProjectorForwardEmissive
-  - DecalMeshForwardEmissive
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -119,7 +117,7 @@ Material:
     - _AddPrecomputedVelocity: 0
     - _AffectAO: 0
     - _AffectAlbedo: 1
-    - _AffectEmission: 0
+    - _AffectEmission: 1
     - _AffectMetal: 0
     - _AffectNormal: 1
     - _AffectSmoothness: 1
