@@ -35,6 +35,7 @@ public class WeatherManager : MonoBehaviour
     void Start()
     {
         windDirection = GetComponentInChildren<WindZone>().gameObject.Facing();
+
     }
 
     // Update is called once per frame
@@ -52,16 +53,21 @@ public class WeatherManager : MonoBehaviour
         }
         if (rainFall != prevRainFall)
         {
-            Events.Instance.OnRainChanged.Invoke(rainFall);
-            SetRain(rainFall);
-            prevRainFall = rainFall;
+
+            //SetRain(rainFall);
+
         }
     }
-
+    IEnumerator PostStart()
+    {
+        yield return new WaitForSeconds(2);
+        SetRain(Enums.RainFall.Heavy);
+    }
     public void SetRain(Enums.RainFall fall)
     {
-
+        prevRainFall = rainFall;
         rainFall = fall;
+        Events.Instance.OnRainChanged.Invoke(rainFall);
         List<GameObject> rainParents = GameObject.FindGameObjectsWithTag("Rain").ToList();
         for (int i = 0; i < rainParents.Count; i++)
         {

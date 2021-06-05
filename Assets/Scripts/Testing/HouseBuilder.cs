@@ -51,8 +51,8 @@ public class HouseBuilder : MonoBehaviour
     }
     void OnValidate()
     {
-        KillChildren();
-        Build();
+        //KillChildren();
+        //Build();
     }
     [Button]
     void Build()

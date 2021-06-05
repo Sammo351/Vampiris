@@ -7,15 +7,18 @@ public class Events : MonoBehaviour
     public static Events Instance;
     public UnityEvent<Enums.RainFall> OnRainChanged;
     public UnityEvent OnLightningStrike;
-    void OnEnable()
+    void Awake()
     {
         Instance = this;
+        Debug.Log("Awoken");
+
+
     }
 
     /*
     How to use;
 
-    To listen;
+    To listen; use OnEnable()
     Events.Instance.OnLightningStrike.AddListener(myFunction)
 
     To call;

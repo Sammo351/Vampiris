@@ -8,6 +8,10 @@ public class LightController : MonoBehaviour
     public bool lit = true;
     public bool canSeeSky = true;
     // Start is called before the first frame update
+    void OnEnable()
+    {
+
+    }
     void Start()
     {
         Events.Instance.OnRainChanged.AddListener(OnRainChanged);
