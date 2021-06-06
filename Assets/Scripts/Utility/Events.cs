@@ -6,7 +6,7 @@ public class Events : MonoBehaviour
 {
     public static Events Instance;
     public UnityEvent<Enums.RainFall> OnRainChanged;
-    public UnityEvent OnLightningStrike;
+    public UnityEvent OnLightningStrike, OnLightningFlash;
     void Awake()
     {
         Instance = this;

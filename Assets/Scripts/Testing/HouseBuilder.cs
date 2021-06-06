@@ -77,16 +77,29 @@ public class HouseBuilder : MonoBehaviour
     {
 
         List<Object> midLayers = width == HouseWidth.Two ? midLayersTwo : midLayersThree;
+        GameObject prevFloor = layers[0];
         for (int i = 1; i < floors; i++)
         {
+            float topOfLastObject = prevFloor.transform.Find("Max_Height").transform.position.y;
             Vector3 angle = new Vector3(0, 90 * Random.Range(0, 4), 0);
 
             GameObject layer = (GameObject)PrefabUtility.InstantiatePrefab(midLayers.Any());//, transform.position.AdjustY(baseScale + (floorScale * (i - 1))), Quaternion.Euler(angle));
-            layer.Pos(transform.position.AdjustY(baseScale + (floorScale * (i - 1))));
-            layer.transform.rotation = Quaternion.Euler(angle + transform.rotation.eulerAngles);
+
+
+
+
+            Vector3 centreOfPrev = prevFloor.transform.Find("Center_Base").transform.position;
+            Vector3 centreOfThis = layer.transform.Find("Center_Base").transform.position;
+            layer.transform.RotateAround(centreOfThis, transform.up, angle.y + transform.rotation.eulerAngles.y);
+            Vector3 differenceBetweenBothCentres = centreOfThis - centreOfPrev;
+            layer.Pos(layer.Pos().AdjustX(-differenceBetweenBothCentres.x).AdjustZ(-differenceBetweenBothCentres.z).SetY(topOfLastObject));
+
             layer.transform.SetParent(tempParent.transform);
             layer.AddComponent<BoxCollider>();
             layers.Add(layer);
+
+
+            prevFloor = layer;
         }
     }
     void BuildFloor()
@@ -94,20 +107,29 @@ public class HouseBuilder : MonoBehaviour
         List<Object> possibleLayers = width == HouseWidth.Two ? lowerLayersTwo : lowerLayersThree;
         GameObject layer = (GameObject)PrefabUtility.InstantiatePrefab(possibleLayers.Any());
         layer.Pos(transform.position);
-        layer.transform.rotation = transform.rotation;
+        //layer.transform.RotateAround(centreOfThis, transform.up, angle.y + transform.rotation.eulerAngles.y);
         layer.transform.SetParent(tempParent.transform);
-
+        layer.transform.rotation = transform.rotation;
         layer.AddComponent<BoxCollider>();
         layers.Add(layer);
     }
     void BuildRoof()
     {
+        GameObject prevFloor = layers.Last();
+        float topOfLastObject = prevFloor.transform.Find("Max_Height").transform.position.y;
+
         Vector3 angle = new Vector3(0, 90 * Random.Range(0, 4), 0);
         List<Object> possibleLayers = width == HouseWidth.Two ? upperLayersTwo : upperLayersThree;
-        //GameObject layer = Instantiate(possibleLayers.Any(), transform.position.AdjustY(baseScale + (floorScale * (layers.Count - 1))), Quaternion.Euler(angle));
         GameObject layer = (GameObject)PrefabUtility.InstantiatePrefab(possibleLayers.Any());
-        layer.Pos(transform.position.AdjustY(baseScale + (floorScale * (layers.Count - 1))));
-        layer.transform.rotation = Quaternion.Euler(angle + transform.rotation.eulerAngles);
+
+        Vector3 centreOfPrev = prevFloor.transform.Find("Center_Base").transform.position;
+        Vector3 centreOfThis = layer.transform.Find("Center_Base").transform.position;
+        layer.transform.RotateAround(centreOfThis, transform.up, angle.y + transform.rotation.eulerAngles.y);
+        Vector3 differenceBetweenBothCentres = centreOfThis - centreOfPrev;
+        layer.Pos(layer.Pos().AdjustX(-differenceBetweenBothCentres.x).AdjustZ(-differenceBetweenBothCentres.z).SetY(topOfLastObject));
+
+        // layer.Pos(transform.position.SetY(topOfLastObject));
+        // layer.transform.rotation = Quaternion.Euler(angle + transform.rotation.eulerAngles);
         layer.transform.SetParent(tempParent.transform);
 
         layers.Add(layer);

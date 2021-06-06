@@ -53,6 +53,7 @@ public class LightningFlash : MonoBehaviour
         yield return new WaitForSeconds(delay);
         StartCoroutine(Thunder(distanceDelay, index));
         light.intensity = 20000000;
+        Events.Instance.OnLightningFlash.Invoke();
         Vector3 playerPos = GameObject.FindWithTag("Player").Pos();
         float offsetMax = 40;
         light.transform.position = new Vector3(Random.Range(-offsetMax, offsetMax), 60, Random.Range(-offsetMax, offsetMax)) + playerPos;
