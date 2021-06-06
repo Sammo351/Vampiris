@@ -7,6 +7,7 @@ public class BuildingController : MonoBehaviour
 {
     public bool externalLightsOn = true;
     public bool interalLightsOn = false;
+    public bool chimneySmoke = true;
     [FoldoutGroup("Window Materials")]
     public Material windowLit, windowUnlit;
     public List<GameObject> windows = new List<GameObject>();
@@ -18,6 +19,13 @@ public class BuildingController : MonoBehaviour
 
     }
 
+    [FoldoutGroup("Window Materials")]
+    [Button]
+    void LoadMaterials()
+    {
+        windowLit = Resources.Load<Material>("Medieval_Windows_Light_2k");
+        windowUnlit = Resources.Load<Material>("Medieval_Windows_2k");
+    }
     // Update is called once per frame
     void Update()
     {
@@ -25,19 +33,25 @@ public class BuildingController : MonoBehaviour
     }
     void OnValidate()
     {
+        if (windowLit == null || windowUnlit == null)
+        {
+            LoadMaterials();
+        }
         SetLights();
+        SetSmoke();
+
     }
     [Button]
     public void FindWindows()
     {
         windows = gameObject.GetDescendants().Where(x => x.tag == "Window").ToList();
-        // List<GameObject> windowParents = gameObject.GetDescendantsByName("Windows");
+        List<GameObject> windowParents = gameObject.GetDescendantsByName("Windows");
 
-        // for (int i = 0; i < windowParents.Count; i++)
-        // {
-        //     windows.AddRange(windowParents[i].GetChildren().Where(x => !windows.Contains(x)));
+        for (int i = 0; i < windowParents.Count; i++)
+        {
+            windows.AddRange(windowParents[i].GetComponentsInChildren<MeshRenderer>().Select(x => x.gameObject).Where(x => !windows.Contains(x)));
 
-        // }
+        }
 
 
 
@@ -59,6 +73,27 @@ public class BuildingController : MonoBehaviour
             LightController lightController = lights[i];
             lightController.SetDependants(externalLightsOn);
         }
+        List<BuildingController> controllers = GetComponentsInChildren<BuildingController>().ToList();
+        controllers.ForEach(x =>
+        {
+            if (x != this)
+            {
+                x.interalLightsOn = interalLightsOn;
+                x.externalLightsOn = externalLightsOn;
+                x.SetLights();
+            }
+        });
+    }
+    void SetSmoke()
+    {
+        List<ChimneyController> controllers = GetComponentsInChildren<ChimneyController>().ToList();
+        controllers.ForEach(x => x.SetSmoke(chimneySmoke));
+    }
+    public void UpdateAll()
+    {
+        SetSmoke();
+        SetLights();
+
     }
 
 }
