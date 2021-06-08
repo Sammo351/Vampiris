@@ -247,7 +247,7 @@ GameObject:
   - component: {fileID: 573519350089715273}
   - component: {fileID: 3402545544752081092}
   m_Layer: 0
-  m_Name: Visual Effect (2)
+  m_Name: Particle Effect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

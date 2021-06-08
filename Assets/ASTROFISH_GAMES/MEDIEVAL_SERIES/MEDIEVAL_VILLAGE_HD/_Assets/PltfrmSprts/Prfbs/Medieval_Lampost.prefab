@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 767496693}
   - component: {fileID: 767496694}
   - component: {fileID: 6466711723731247844}
-  - component: {fileID: 3894954727384290002}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -44,9 +43,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.990566, g: 0.57087374, b: 0.15325731, a: 1}
-  m_Intensity: 1542.5277
-  m_Range: 16.5
+  m_Color: {r: 0.99215686, g: 0.5837896, b: 0.15294117, a: 1}
+  m_Intensity: 3183.0989
+  m_Range: 10.83
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -84,16 +83,16 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 0.5, y: 0.5}
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 21.54}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
-  m_ShadowRadius: 0
+  m_ShadowRadius: 2.7
   m_ShadowAngle: 0
 --- !u!114 &6466711723731247844
 MonoBehaviour:
@@ -115,14 +114,14 @@ MonoBehaviour:
   m_PointlightHDType: 0
   m_SpotLightShape: 0
   m_AreaLightShape: 0
-  m_Intensity: 13.591081
+  m_Intensity: 40000
   m_EnableSpotReflector: 0
   m_LuxAtDistance: 1
   m_InnerSpotPercent: 0
   m_SpotIESCutoffPercent: 100
   m_LightDimmer: 1
   m_VolumetricDimmer: 1
-  m_LightUnit: 4
+  m_LightUnit: 0
   m_FadeDistance: 10000
   m_VolumetricFadeDistance: 10000
   m_AffectDiffuse: 1
@@ -131,7 +130,7 @@ MonoBehaviour:
   m_ShapeWidth: 0.5
   m_ShapeHeight: 0.5
   m_AspectRatio: 1
-  m_ShapeRadius: 0.025
+  m_ShapeRadius: 2.7
   m_SoftnessScale: 1
   m_UseCustomSpotLightShadowCone: 0
   m_CustomSpotLightShadowCone: 30
@@ -217,24 +216,6 @@ MonoBehaviour:
   m_AreaLightEmissiveMeshShadowCastingMode: 0
   m_AreaLightEmissiveMeshMotionVectorGenerationMode: 0
   m_AreaLightEmissiveMeshLayer: -1
---- !u!114 &3894954727384290002
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 767496692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c3fd82269328e442ac96a02782206be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetBrightnessRange: {x: 0.7, y: 1}
-  targetSaturationRange: {x: 0.65, y: 0.95}
-  maxBrightnessChange: 0.04
-  maxSaturationChange: 0.08
-  maxMovement: 0.04
-  rangeChangeAmount: 0.2
 --- !u!1 &3951785702560294900
 GameObject:
   m_ObjectHideFlags: 0
@@ -483,6 +464,26 @@ PrefabInstance:
     - target: {fileID: 1392214582774586705, guid: bf092b899a887c046a5b5bfc69d854df, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1429541342134870187, guid: bf092b899a887c046a5b5bfc69d854df, type: 3}
+      propertyPath: m_Intensity
+      value: 20000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2014682978853337234, guid: bf092b899a887c046a5b5bfc69d854df, type: 3}
+      propertyPath: m_Color.g
+      value: 0.6218655
+      objectReference: {fileID: 0}
+    - target: {fileID: 2014682978853337234, guid: bf092b899a887c046a5b5bfc69d854df, type: 3}
+      propertyPath: m_Intensity
+      value: 530.5165
+      objectReference: {fileID: 0}
+    - target: {fileID: 2014682978853337234, guid: bf092b899a887c046a5b5bfc69d854df, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2740856253285395243, guid: bf092b899a887c046a5b5bfc69d854df, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf092b899a887c046a5b5bfc69d854df, type: 3}
