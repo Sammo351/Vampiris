@@ -429,7 +429,7 @@ Transform:
   m_GameObject: {fileID: 7128496232133715653}
   m_LocalRotation: {x: -4.635181e-15, y: 0.999903, z: 3.5527137e-15, w: 0.013927875}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5600286, y: 0.6989879, z: 0.5600286}
+  m_LocalScale: {x: 0.5, y: 0.6989879, z: 0.5}
   m_Children: []
   m_Father: {fileID: 3789641610657917482}
   m_RootOrder: 1
@@ -475,8 +475,8 @@ ParticleSystemRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_RenderMode: 0
-  m_SortMode: 0
+  m_RenderMode: 3
+  m_SortMode: 3
   m_MinParticleSize: 0
   m_MaxParticleSize: 1
   m_CameraVelocityScale: 0
@@ -491,7 +491,7 @@ ParticleSystemRenderer:
   m_UseCustomVertexStreams: 1
   m_EnableGPUInstancing: 1
   m_ApplyActiveColorSpace: 0
-  m_AllowRoll: 1
+  m_AllowRoll: 0
   m_FreeformStretching: 0
   m_RotateWithStretchDirection: 1
   m_VertexStreams: 000103040508
@@ -1333,7 +1333,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 1
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -1940,13 +1940,13 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     speedRange: {x: 1, y: 1}
-    tilesX: 2
+    tilesX: 6
     tilesY: 2
-    animationType: 0
+    animationType: 1
     rowIndex: 0
-    cycles: 1
+    cycles: 2
     uvChannelMask: -1
-    rowMode: 1
+    rowMode: 0
     sprites:
     - sprite: {fileID: 0}
     flipU: 0

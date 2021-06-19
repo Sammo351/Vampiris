@@ -10,6 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
-  m_Name: Sky and Fog Volume Profile
+  m_Name: Sam's Town Settings
   m_EditorClassIdentifier: 
-  components: []
+  components:
+  - {fileID: -1417894427755071568, guid: 3f74a9343b12d8940ad1d42f01ca6459, type: 2}
+  - {fileID: -7518727599821220274, guid: 3f74a9343b12d8940ad1d42f01ca6459, type: 2}
+  - {fileID: -6317569511045884133, guid: 3f74a9343b12d8940ad1d42f01ca6459, type: 2}
+  - {fileID: 6734982946341906165, guid: 3f74a9343b12d8940ad1d42f01ca6459, type: 2}
+  - {fileID: 6847082890015900727, guid: 3f74a9343b12d8940ad1d42f01ca6459, type: 2}
+  - {fileID: 3818864770465836453, guid: 3f74a9343b12d8940ad1d42f01ca6459, type: 2}
+  - {fileID: 1621922439078660119, guid: 3f74a9343b12d8940ad1d42f01ca6459, type: 2}
