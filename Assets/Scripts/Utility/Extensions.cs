@@ -138,4 +138,14 @@ public static class Extensions
         return list;
     }
 
+    public static T GetOrAddComponent<T>(this GameObject game) where T : Component
+    {
+        if (game.GetComponent<T>() != null)
+            return game.GetComponent<T>();
+
+        return game.AddComponent<T>();
+        
+
+    }
+
 }
