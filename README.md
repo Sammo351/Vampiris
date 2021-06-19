@@ -2,7 +2,7 @@
 
 It's a game.
 
-You track, hunt and destroy evile creatures that lurk in forests and unaware towns.
+You track, hunt and destroy evil creatures that lurk in forests and unaware towns.
 
 Cool? Cool.
 
