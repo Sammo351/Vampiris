@@ -5,4 +5,6 @@ using UnityEngine;
 public class Enums
 {
     public enum RainFall { None, Light, Heavy };
+    public enum DamageType { Blunt, Piercing };
+
 }
